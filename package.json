@@ -12,6 +12,8 @@
     "react-scripts": "3.3.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -33,6 +35,19 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1"
-  }
+  },
+  "description": "This project was created with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DereviankoViacheslav/todo-list-on-react-rest-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DereviankoViacheslav/todo-list-on-react-rest-api/issues"
+  },
+  "homepage": "https://DereviankoViacheslav.github.io/todo-list-on-react-rest-api"
 }
