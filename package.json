@@ -1,5 +1,10 @@
 {
   "name": "todo-list-on-react-rest-api",
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -35,6 +40,9 @@
     ]
   },
   "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
     "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1"
   },

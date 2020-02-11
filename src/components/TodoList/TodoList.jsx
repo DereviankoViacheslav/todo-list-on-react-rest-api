@@ -1,36 +1,35 @@
 import React from 'react';
 import TasksList from '../TasksList';
 import CreateTaskInput from '../CreateTaskInput';
-import MockApiService from '../../services/mockApiService';
+import { addTask, deleteTask, setTaskStatus, getResource } from '../../services/mockApiService';
 import './TodoList.scss';
 
 class App extends React.Component {
   state = { tasks: [] };
-  mockApiService = new MockApiService();
 
   componentDidMount() {
     this.fetchTasksList();
   }
 
   fetchTasksList = () => {
-    this.mockApiService.getResource()
+    getResource()
       .then(tasks => {
         this.setState({ tasks });
       });
   }
 
   onCreate = (text) => {
-    this.mockApiService.addTask(text)
+    addTask(text)
       .then(() => this.fetchTasksList());
   }
 
   onDelete = (taskId) => {
-    this.mockApiService.deleteTask(taskId)
+    deleteTask(taskId)
       .then(() => this.fetchTasksList());
   }
 
   onToggleDone = (taskId) => {
-    this.mockApiService.setTaskStatus(taskId)
+    setTaskStatus(taskId)
       .then(() => this.fetchTasksList());
   }
 
