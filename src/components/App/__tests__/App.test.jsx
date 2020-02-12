@@ -5,7 +5,11 @@ import App from '../App';
 describe('<App />', () => {
   it('should display TodoList', () => {
     const wrappedComponent = shallow(<App />);
-    // expect(wrappedComponent.find('TodoList').exists()).toBeTruthy();
     expect(wrappedComponent).toMatchSnapshot();
+  });
+  
+  it('should display TodoList', () => {
+    const wrappedComponent = shallow(<App />);
+    expect(wrappedComponent.find('TodoList').exists()).toBeTruthy();
   });
 });

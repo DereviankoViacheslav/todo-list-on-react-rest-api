@@ -4,7 +4,7 @@ import CreateTaskInput from '../CreateTaskInput';
 import { addTask, deleteTask, setTaskStatus, getResource } from '../../services/mockApiService';
 import './TodoList.scss';
 
-class App extends React.Component {
+class TodoList extends React.Component {
   state = { tasks: [] };
 
   componentDidMount() {
@@ -50,4 +50,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default TodoList;

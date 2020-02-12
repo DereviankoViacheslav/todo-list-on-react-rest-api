@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<App /> should display TodoList 1`] = `<App />`;
+exports[`<App /> should display TodoList 1`] = `<TodoList />`;
