@@ -1,4 +1,4 @@
-# [Todo App](https://dereviankoviacheslav.github.io/todo-list-on-react-rest-api/)
+# [Todo App](https://dereviankoviacheslav.github.io/todo-list-on-react-rest-api/dist)
 
 ### QUICK START
 In the project directory, you can run:
