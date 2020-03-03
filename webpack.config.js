@@ -8,9 +8,7 @@ module.exports = (env, argv) => {
   const config = {
     entry: "./src/index.js",
     output: {
-      path: __dirname + '/build',
       filename: "bundle.js",
-      publicPath:'/'
     },
     module: {
       rules: [
