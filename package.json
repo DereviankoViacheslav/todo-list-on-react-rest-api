@@ -1,61 +1,40 @@
 {
-  "name": "todo-list-on-react-rest-api",
-  "jest": {
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
-  },
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.0",
-    "@testing-library/user-event": "^7.2.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
-  },
+  "name": "task1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "webpack -p",
+    "start": "webpack-dev-server -d --devtool eval-source-map --open"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
-    "enzyme-to-json": "^3.4.4",
-    "gh-pages": "^2.2.0",
-    "node-sass": "^4.13.1"
-  },
-  "description": "This project was created with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DereviankoViacheslav/todo-list-on-react-rest-api.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DereviankoViacheslav/todo-list-on-react-rest-api/issues"
+  "devDependencies": {
+    "@babel/cli": "^7.8.0",
+    "@babel/core": "^7.8.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.2",
+    "@babel/preset-react": "^7.8.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.1",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
   },
-  "homepage": "https://DereviankoViacheslav.github.io/todo-list-on-react-rest-api"
+  "dependencies": {
+    "core-js": "^3.6.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "redux": "^4.0.5",
+    "react-redux": "^7.2.0",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0"
+  }
 }
