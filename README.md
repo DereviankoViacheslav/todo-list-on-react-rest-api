@@ -19,6 +19,8 @@ The page will reload if you make edits.
 - [BEM methodology](https://en.bem.info/methodology/)
 - [JS ES6](https://ru.wikipedia.org/wiki/ECMAScript)
 - [ReactJS](https://reactjs.org/)
+- [Redux](https://redux.js.org/)
+- [Redux-thunk](https://www.npmjs.com/package/redux-thunk)
 
 ### Author
 [Derevianko Viacheslav](https://github.com/DereviankoViacheslav)
